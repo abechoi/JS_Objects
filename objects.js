@@ -13,6 +13,7 @@
 	3. Write a function to sum up all the properties of an object.
 
 	4. Create a function multiplyNumeric( obj ) that multiples all numberic properties by 2.
+*/
 
 
 // 1. Create an object named user...
@@ -56,7 +57,6 @@ function addSalaries( obj ){
 }
 
 addSalaries( salaries );
-*/
 
 // 4. Create a function multiplyNumeric( obj )
 let menu = {
