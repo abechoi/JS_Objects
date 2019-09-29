@@ -32,22 +32,27 @@ var contacts = [
 
 
 function lookUpProfile(name, prop){
-// Only change code below this line
 
-    for (var x = 0; x < contacts.length; x++){
-        if (contacts[x].firstName === name) {
-            if (contacts[x].hasOwnProperty(prop)) {
-                return contacts[x][prop];
-            } else {
+    for( var i = 0; i < contacts.length; ++i ){
+        
+        // Match the firstname property of an object to name argument.
+        if( contacts[i].firstName === name ){
+            // Check the object properties for the prop argument.
+            if( contacts[i].hasOwnProperty(prop) ){
+                // Return the property if it exists
+                return contacts[i][prop];
+            }
+            else{
+                // If not, return this:
                 return "No such property";
             }
+
         }
     }
+    // If the contact has not been found in the for loop, return this:
     return "No such contact";
 
-
-// Only change code above this line
 }
 
-// Change these values to test your function
-lookUpProfile("Akira", "likes");
+
+console.log( lookUpProfile("Akira", "likes") );
