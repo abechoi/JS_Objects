@@ -3,7 +3,7 @@
         Examples of destructuring assignments...
  */
 
- // Destructuring Assignment from an object
+ // Destructuring assignments from an object
 const AVG_TEMPERATURES = { today: 77.5,tomorrow: 79};
 
         function getTempOfTmrw(avgTemperatures) {
@@ -18,7 +18,7 @@ const AVG_TEMPERATURES = { today: 77.5,tomorrow: 79};
         console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
 
 
-// Destructuring Assignment from a nested object
+// Destructuring assignments from a nested object
 const LOCAL_FORECAST = {
     today: { min: 72, max: 83 },
     tomorrow: { min: 73.3, max: 84.6 }
@@ -33,3 +33,14 @@ const LOCAL_FORECAST = {
   }
   
   console.log(getMaxOfTmrw(LOCAL_FORECAST)); // should be 84.6
+
+  // Destructuring assignments from arrays
+  let a = 8, b = 6;
+(() => {
+  "use strict";
+  // change code below this line
+  [ a, b ] = [ b, a ]
+  // change code above this line
+})();
+console.log(a); // should be 6
+console.log(b); // should be 8
