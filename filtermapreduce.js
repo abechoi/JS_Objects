@@ -19,7 +19,7 @@ const squareList = (arr) => {
 };
 
 function myFunc(total, num) {
-    return total + num;
+    return total - num;
 }
 
 // test your code
